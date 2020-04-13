@@ -7,5 +7,5 @@ RUN apt-get -qq update --yes \
 
 RUN /opt/conda/bin/conda config --add channels conda-forge \
   && /opt/conda/bin/conda update --all --yes --quiet \
-  && /opt/conda/bin/conda install --yes conda-build \
+  && /opt/conda/bin/conda install --yes conda-build mamba \
   && /opt/conda/bin/conda clean --all --yes
